@@ -41,35 +41,46 @@
  -Undefined
  -null -->
 <script type="text/javascript">
-    var a=10;
-    var b=20;
-    var lienbreak="<br />";
-    document.write(lienbreak);
-    document.write("(a<b/>) =>");
-    document.write(a<b);
-    document.write(lienbreak);
-    document.write("(a>b/>) =>");
-    document.write(a>b);
-    --document.write(lienbreak);
-    document.write("(a==b/>) =>");  
-    document.write(a==b);
+    // var a=10;
+    // var b=20;
+    // var lienbreak="<br />";
+    // document.write(lienbreak);
+    // document.write("(a<b/>) =>");
+    // document.write(a<b);
+    // document.write(lienbreak);
+    // document.write("(a>b/>) =>");
+    // document.write(a>b);
+    // --document.write(lienbreak);
+    // document.write("(a==b/>) =>");  
+    // document.write(a==b); -->
+
+//========================================================================
     //assignment: write a programe using ternary operator with 3 statements
 
-//LOOP:
- var i=0;
- for (i=0;i<3;i++){
-    console.log(i);
+//LOOP:=================================================
+//  var i=0;
+//  for (i=0;i<3;i++){
+//     console.log(i);
 
- }
+//  }
 
- var count ;
- document.write("startingloop"+"<br/>");
- for(count=0;count<10;count++){
-    document.write("current count is "+count+"<br/>");
-    document.write("<br/>");
- }
-document.write("loop ended"+"<br/>");
+//  var count ;
+//  document.write("startingloop"+"<br/>");
+//  for(count=0;count<10;count++){
+//     document.write("current count is "+count+"<br/>");
+//     document.write("<br/>");
+//  }
+// document.write("loop ended"+"<br/>");
 
+//--for in loop: ------------------------------>
+const person={
+    name:"abhay",
+    age:22,
+    city:"delhi"
+};
+for(let key in person){
+    console.log("person details"+key+" "+person[key]);
+}
 
 </script>;
 
@@ -82,6 +93,6 @@ document.write("loop ended"+"<br/>");
 
 
 
-    <script src ="./script.js"></script>
+    <script 'src ="./script.js"></script>
 </body>
 </html>

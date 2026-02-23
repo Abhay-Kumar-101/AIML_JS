@@ -3,7 +3,7 @@
  var b=20;
  var lienbreak="<br/>";
  document.write(lienbreak);
- document.write("(a<b)")=>");
+ {/* document.write("(a<b)")=>"); */}
 
 
 
