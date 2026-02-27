@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        // var a = 10;
+        // var b = 20;
+        // var linebreak = "<br/>";
+
+        // document.write("(a < b) => " + (a < b) + linebreak);
+        // // result = (a < b);
+        // // document.write("Result is: " + result);
+        // // document.write(linebreak);
+        // document.write("(a > b) => " + (a > b) + linebreak);
+        // document.write("(a <= b) => " + (a <= b) + linebreak);
+        // document.write("(a >= b) => " + (a >= b) + linebreak);
+        // document.write("(a != b) => " + (a != b) + linebreak);
+
+
+        // document.write("(a == b) => " + (a == b) + linebreak);
+        
+        // document.write("(a === b) => " + (a === b) + linebreak);
+
+
+
+        // /////-----loops in js-----/////
+        // var count;
+        // document.write("starting loop" + linebreak);
+        // for (count = 0; count < 10; count++) {
+        //     document.write("count is: " + count + linebreak);
+        // }
+     
+        // document.write("loop ended" + linebreak);
+
+
+
+        //-----For IN loop -----/////
+
+        const person = {
+            name: "Abhay",
+            age: 21,
+            city: "Delhi"
+        };
+
+        for (let key in person) {
+        //   console.log( "person details : " + key + ": " + person[key]);
+          console.log( "person details : " + key + ": " + person.key);//we can write "person[key]" as "person.x"
+        }
+
+        ///--------while loop------------///
+        var count=0;
+        document.write("starting loop ");
+
+        while(count<10){
+            document.write("current count:"+count+"<br>/>")
+            count++;
+
+        }
+        document.write("loop stopped");
+
+        
+    </script>
+</body>
+
+</html>
