@@ -35,11 +35,26 @@
 
  <!-- 
  -----------primitive data type------------------
+
  -number:1 2 3 4etc
  -string:character
  -booelan:true flase
  -Undefined
  -null -->
+
+
+ <!-- ----------------reference type------------------
+
+ -array
+ -function
+ -object -->
+
+ <!----symbol type---------------------------
+    used for so name clashing
+     -->
+
+
+
 <script type="text/javascript">
     // var a=10;
     // var b=20;
@@ -74,9 +89,9 @@
 
 //--for in loop: ------------------------------>
 const person={
-    name:"abhay",
+    fname:"abhay",
+    lname:"kumar",
     age:22,
-    city:"delhi"
 };
 for(let key in person){
     console.log("person details"+key+" "+person[key]);
