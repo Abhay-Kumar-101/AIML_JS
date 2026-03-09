@@ -1,6 +1,6 @@
 console.log("Hello World");
 document.write("Hello World");
-<script type="text/javascript">
+{/* <script type="text/javascript"> */}
 var num=10;
 console.log(num);
 console.log(typeof(num))
@@ -27,7 +27,7 @@ var numberArray=[1,2,3];
 //object  */}
 
 const sym1=symbol(4)
-const.log(sym1);
+console.log(sym1);
 
 const sym2=symbol(4);
 console.log(sym2);
@@ -36,4 +36,4 @@ if (sym1==sym2){
 }
 else
 console.log("false")
-</script>
+// </script>
