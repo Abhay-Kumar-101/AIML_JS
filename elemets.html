@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- __________________________________________________________________________ -->
+    <h1 id="myH1" class="democlass"> the element object</h1>
+       <h1 id="myH2" ></h1>
+
+    <p id="demo"></p>
+    <h4></h4>
+
+    <button onmouseover="onMouseOver()">onmouseover</button>
+    <button onmouseover="onmousedown()">onmousedown</button>
+    <button onmouseover="onmouseout()">onmouseout</button>
+    <button onmouseover="onmouseup()">onmouseup</button>
+
+
+
+    <script>       
+
+// _____________________________________________________________________________________________
+
+        // const element = document.getElementById("myH1");
+        // let text = element.getAttribute("class");
+        // document.getElementById(demo).innerHTML=text;
+
+        // function myFunction()
+        // {
+        //     document.getElementById("myH2").setAttribute("class","democlass");
+        // }
+// _____________________________________________________________________________________________
+
+
+        const heading =document.createElement("h2");
+        const bodytag =document.getElementByTagName("body");
+        bodytag[0].append(heading);
+        heading.innerText = "hello";heading.style.backgroundColor="red";
+        //some more methode to insert elements
+        //node.prepend()
+        //node.before()
+        // node.after()
+    // _________________________________________________________________________________________
+        
+    function onMouseOver(){
+        cosole.log("onmouseover")
+    }
+
+
+
+    </script>
+</body>
+</html>
