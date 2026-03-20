@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+    //higher order function
+    function add(a,b){
+        return a+b;
+    }  
+    //map function
+    var num=[1,2,3,4,5];
+    var result=num.map(n=> n*2);
+    console.log(result);
+    //filter function
+    var result2=num.filter(n=> n%2==0);
+    console.log(result2);
+    //reduce function
+    var result3=num.reduce((acc,n)=> acc+n,0);
+    console.log(result3);
+    //_____________________________________________________________________________________________________________
+    //promise: a promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+    //promise has three states: pending, fulfilled, rejected
+    var promise=new Promise((resolve,reject)=>{
+        let sucess=true;
+        if(sucess){
+            resolve("promise is resolved");
+        }
+        else{
+            reject("promise is rejected");
+        }
+    });
+    promise.then(result=> console.log(result)).catch(error=> console.log(error));
+    //then is use to handle the resolved value of the promise and catch is use to handle the rejected value of the promise
+    //_____________________________________________________________________________________________________________
+    //async await: async function is a function that is declared with the async keyword and allows the use of await keyword inside it. await keyword is used to wait for a promise to be resolved or rejected before proceeding with the execution of the code.
+    async function fetchData(){
+        try{
+            let response=await fetch('https://jsonplaceholder.typicode.com/posts/1');
+            let data=await response.json();
+            console.log(data);
+        }
+        catch(error){
+            console.log(error);
+        }
+    }
+    fetchData();
+    //fectch api is a built-in function that is used to make network requests and return a promise that resolves to the response of the request. in this example we are fetching data from jsonplaceholder api and logging the response to the console.
+    fetch('https://jsonplaceholder.typicode.com/posts/1')
+    .then(response=> response.json())
+    .then(data=> console.log(data))
+    .catch(error=> console.log(error));
+
+    //error handling 
+    //try catch is used to handle the error in synchronous code and promise catch is used to handle the error in asynchronous code
+     try{
+        var x=y+10;
+     }
+     catch(error){
+        console.log("error is: "+error);
+     }
+     finally{
+        console.log("this block will always execute");
+     }                                                       
+     
+     //Local storage: local storage is a web storage that allows us to store data in the browser. it is a key-value pair storage and the data stored in local storage is persistent even after the browser is closed.
+
+     localStorage.setItem("name","abhay");
+     console.log(localStorage.getItem("name"));
+     localStorage.removeItem("name");
+
+     //object store
+    var user=(name,"jeet.age=50");
+    localStorage.setItem("user",JSON.stringify(user));
+    var userData=JSON.parse(localStorage.getItem("user"));
+    console.log(data.name);
+
+     </script>
+    
+    
+</body>
+</html>
